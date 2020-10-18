@@ -12,13 +12,14 @@ public class Problem2 {
         int k = 1;
         int i;
         int main = nums[0];
-        for(i = 1; i < k; i++){
+        for(i = 1; i < nums.length; i++){
             if(nums[i] != main){
                 main = nums[i];
                 nums[k] = nums[i];
                 k++;
             }
         }
+
         return k;
     }
          // place holder
